@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Карта
+{% endblock %}
+
+{% block body %}
+<div class="album py-5 bg-body-tertiary">
+    <div class="container">
+    <h2 class="fw-normal">Карта полей</h2>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor:72f2a74af50f831dc985dcd2ed06bcb20970f3d84ec740b389f01c585d37e7eb&amp;source=constructor" width="950" height="470" frameborder="0"></iframe>
+          </div>
+        </div>
+    </div>
+  </div>
+{% endblock %}

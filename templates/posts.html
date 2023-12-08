@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Отзывы пользователей
+{% endblock %}
+
+{% block body %}
+<div class="album py-5 bg-body-tertiary">
+    <div class="container">
+    <h2 class="fw-normal">Отзывы</h2>
+    <div class="row">
+
+        {% for post in posts %}
+         <div class="col-md-6 item">
+            <div class="item-in">
+                <h4>{{ post.title }}</h4>
+                <div class="seperator"></div>
+                <p>{{ post.text }}</p>
+
+            </div>
+         </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
